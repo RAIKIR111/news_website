@@ -1,0 +1,309 @@
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 180px;
+    margin: 0 auto;
+    background-image: url(img/header_bg.jpg);
+    background-color: rgb(114, 114, 114);
+    background-blend-mode: multiply;
+    background-size: 35%;
+    background-repeat: repeat-x;
+    cursor: pointer;
+    transition: 2s linear;
+}
+
+.dollar {
+    position: absolute;
+    width: 100%;
+    background-color: rgb(53, 53, 53);
+    font-family: 'Oswald', sans-serif;
+    transition: 1s;
+}
+
+.dollar span {
+    margin-left: 100px;
+    color: rgb(0, 255, 0);
+}
+
+nav {
+    margin-top: 100px;
+}
+
+nav a {
+    margin-left: 80px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+}
+
+nav a:hover {
+    transition: all 0.3s ease;
+    color: rgb(139, 139, 255);
+}
+
+header h1 {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    font-size: 80px;
+    color: rgb(78, 78, 78);
+    text-shadow: white 2px 2px 0, white -2px -2px 0, white -2px 2px 0, white 2px -2px 0;
+    margin-left: 100px;
+    letter-spacing: 5px;
+}
+
+main {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 15px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.left {
+    width: 60%;
+    float: left;
+}
+
+.left_picture_blank {
+    height: 55%;
+}
+
+.left_picture {
+    background-image: url(img/jobs1.png), url(img/apple_logo.png), url(img/apple12.png);
+    background-size: contain, 50%, 100%;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: right, 80px 0, 0 0;
+    height: 500px;
+    box-shadow: inset 0 0 0 10px rgb(114, 114, 114, 0.5);
+}
+
+.left_picture_text {
+    color: white;
+    font-weight: 400;
+    font-size: 32px;
+    width: 65%;
+    text-align: center;
+}
+
+.left_picture_text p {
+    margin-bottom: 0;
+}
+
+.left_picture_text a {
+    font-size: 22px;
+    color: rgb(114, 114, 114);
+    text-decoration: none;
+    font-style: italic;
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.left_picture:hover .left_picture_text a {
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+.left_picture_text a:hover {
+    transition: all 0.3s ease;
+    color: rgb(139, 139, 255);
+}
+
+.left_picture:hover {
+    box-shadow: inset 0 0 0 20px rgb(114, 114, 114, 0.5);
+    transition: all 0.3s ease;
+}
+
+.left_links {
+    margin-top: 10px;
+}
+
+.country {
+    float: left;
+    width: 49.5%;
+    height: 300px;
+    background-image: url(img/country.jpg);
+    background-size: 110%;
+    background-repeat: no-repeat;
+    font-size: 30px;
+    color: white;
+    box-shadow: inset 0 0 0 10px rgb(114, 114, 114, 0.5);
+}
+
+.country_text {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.country:hover {
+    box-shadow: inset 0 0 0 20px rgb(114, 114, 114, 0.5);
+    transition: all 0.3s ease;
+}
+
+.country:hover .country_info {
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+.country_text a {
+    text-decoration: none;
+    color: white;
+}
+
+.country_text a:hover {
+    color: rgb(139, 139, 255);
+    transition: all 0.3s ease;
+}
+
+.country_info {
+    color: white;
+    font-size: 15px;
+    height: 155px;
+    text-align: center;
+    background-color: rgb(114, 114, 114, 0.7);
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.country_info p {
+    margin-right: 40px;
+    margin-left: 40px;
+    padding-top: 10px;
+}
+
+.us {
+    float: right;
+    width: 49.5%;
+    height: 300px;
+    background-image: url(img/us1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-size: 30px;
+    color: white;
+    box-shadow: inset 0 0 0 10px rgb(114, 114, 114, 0.5);
+}
+
+.us_text {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.us_text a {
+    text-decoration: none;
+    color: white;
+}
+
+.us_info {
+    color: white;
+    font-size: 15px;
+    height: 155px;
+    text-align: center;
+    background-color: rgb(114, 114, 114, 0.7);
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.us_info p {
+    margin-right: 40px;
+    margin-left: 40px;
+    padding-top: 10px;
+}
+
+.us:hover {
+    box-shadow: inset 0 0 0 20px rgb(114, 114, 114, 0.5);
+    transition: all 0.3s ease;
+}
+
+.us:hover .us_info {
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+.us_text a:hover {
+    color: rgb(139, 139, 255);
+    transition: all 0.3s ease;
+}
+
+.right {
+    float: right;
+    width: 38%;
+}
+
+.right_input {
+    width: 70%;
+    border: 1px solid rgb(114, 114, 114);
+    height: 40px;
+    background-color: rgb(114, 114, 114);
+}
+
+.main_input {
+    width: 100%;
+    display: flex;
+}
+
+.right_input input {
+    width: 100%;
+    border: 0;
+    font-family: 'Roboto Slab', serif;
+    margin-top: 5px;
+    font-size: 20px;
+    background-color: rgb(114, 114, 114);
+    color: white;
+}
+
+.right_input input:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+input[type="search"]::placeholder {
+    font-family: 'Roboto Slab', serif;
+    color: rgb(207, 207, 207);
+}
+
+.main_input button {
+    border: 0;
+    width: 100px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    color: rgb(114, 114, 114);
+}
+
+.right_recent_posts h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    letter-spacing: 30px;
+    border-bottom: 6px solid rgb(114, 114, 114);
+}
+
+.recent_posts_info a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.recent_posts_info a:hover {
+    transition: all 0.1s ease;
+    color: rgb(139, 139, 255);
+}
+
+.recent_posts_info p:hover {
+    transition: all 0.5s ease;
+    background-color: rgb(44, 44, 44);
+}
+
+.recent_posts_info p {
+    background-color: rgb(114, 114, 114);
+    height: 45px;
+    padding-left: 20px;
+    border-bottom: 5px solid black;
+}
